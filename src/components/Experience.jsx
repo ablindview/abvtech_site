@@ -1,4 +1,5 @@
 import './Experience.css'
+import BackToTop from './BackToTop'
 
 const JOBS = [
   {
@@ -90,6 +91,7 @@ export default function Experience() {
             </li>
           ))}
         </ol>
+        <BackToTop />
       </div>
     </section>
   )

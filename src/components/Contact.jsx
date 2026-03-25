@@ -1,4 +1,5 @@
 import './Contact.css'
+import BackToTop from './BackToTop'
 
 export default function Contact() {
   return (
@@ -73,6 +74,7 @@ export default function Contact() {
             </div>
           </a>
         </div>
+        <BackToTop />
       </div>
     </section>
   )

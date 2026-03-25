@@ -1,4 +1,5 @@
 import './About.css'
+import BackToTop from './BackToTop'
 
 const SPECIALTIES = [
   'Python Programming',
@@ -55,6 +56,7 @@ export default function About() {
             </ul>
           </div>
         </div>
+        <BackToTop />
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import './Portfolio.css'
+import BackToTop from './BackToTop'
 
 export default function Portfolio() {
   return (
@@ -25,6 +26,7 @@ export default function Portfolio() {
             for updates.
           </p>
         </div>
+        <BackToTop />
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import './Education.css'
+import BackToTop from './BackToTop'
 
 const EDUCATION = [
   {
@@ -47,6 +48,7 @@ export default function Education() {
             </article>
           ))}
         </div>
+        <BackToTop />
       </div>
     </section>
   )

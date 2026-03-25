@@ -1,4 +1,5 @@
 import './Skills.css'
+import BackToTop from './BackToTop'
 
 const SKILL_GROUPS = [
   {
@@ -53,6 +54,7 @@ export default function Skills() {
             </div>
           ))}
         </div>
+        <BackToTop />
       </div>
     </section>
   )
