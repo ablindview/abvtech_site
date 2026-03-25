@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="container hero-content">
         <div className="hero-text">
           <h1 className="hero-name">
-            Hello, I'm <span className="gradient-text">Dwayne Davis</span>
+            <span className="gradient-text">Dwayne Davis</span>
           </h1>
           <p className="hero-title">QA &amp; Accessibility Specialist</p>
           <p className="hero-tagline">
