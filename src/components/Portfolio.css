@@ -1,0 +1,34 @@
+.portfolio-coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-card);
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.portfolio-icon {
+  color: var(--accent-purple);
+  margin-bottom: 1.25rem;
+  opacity: 0.7;
+}
+
+.portfolio-cs-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-cs-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 40ch;
+  margin: 0;
+}

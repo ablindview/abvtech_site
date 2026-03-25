@@ -1,0 +1,286 @@
+/* ============================================================
+   DESIGN TOKENS — dark theme (default)
+   prefers-color-scheme: light overrides below
+   ============================================================ */
+:root {
+  --bg-primary:   #07071a;
+  --bg-surface:   #0d0d28;
+  --bg-card:      #131332;
+  --bg-card-hover:#191942;
+
+  --text-primary:   #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+
+  --accent-purple: #a78bfa;
+  --accent-blue:   #60a5fa;
+  --gradient:      linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+  --gradient-text: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+
+  --border:        rgba(167, 139, 250, 0.18);
+  --border-strong: rgba(167, 139, 250, 0.4);
+  --focus-ring:    #a78bfa;
+  --shadow:        0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-card:   0 2px 12px rgba(0, 0, 0, 0.4);
+
+  --sans: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --radius: 12px;
+  --radius-sm: 6px;
+
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary:   #f5f3ff;
+    --bg-surface:   #ffffff;
+    --bg-card:      #ede9fe;
+    --bg-card-hover:#ddd6fe;
+
+    --text-primary:   #1e1b4b;
+    --text-secondary: #4c1d95;
+    --text-muted:     #6d28d9;
+
+    --accent-purple: #7c3aed;
+    --accent-blue:   #1d4ed8;
+    --gradient:      linear-gradient(135deg, #7c3aed 0%, #1d4ed8 100%);
+    --gradient-text: linear-gradient(135deg, #7c3aed 0%, #1d4ed8 100%);
+
+    --border:        rgba(124, 58, 237, 0.2);
+    --border-strong: rgba(124, 58, 237, 0.5);
+    --focus-ring:    #7c3aed;
+    --shadow:        0 4px 24px rgba(124, 58, 237, 0.12);
+    --shadow-card:   0 2px 12px rgba(124, 58, 237, 0.08);
+
+    color-scheme: light;
+  }
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   SKIP LINK — WCAG 2.4.1
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent-purple);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  text-decoration: none;
+  z-index: 9999;
+  font-size: 0.875rem;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ============================================================
+   FOCUS — WCAG 2.4.7
+   ============================================================ */
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem);  font-weight: 700; }
+h3 { font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 600; }
+
+p  { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--accent-purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--accent-blue); }
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-surface);
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-purple);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+  max-width: 56ch;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-card);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover { opacity: 0.88; }
+.btn:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+
+.btn-primary {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(167, 139, 250, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--border-strong);
+  color: var(--text-primary);
+}
+.btn-outline:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+  opacity: 1;
+}
+
+/* ============================================================
+   BADGE / SKILL TAG
+   ============================================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(167, 139, 250, 0.12);
+  color: var(--accent-purple);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+@media (prefers-color-scheme: light) {
+  .badge {
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--accent-purple);
+  }
+}
+
+/* ============================================================
+   DIVIDER
+   ============================================================ */
+.divider {
+  width: 3rem;
+  height: 3px;
+  background: var(--gradient);
+  border-radius: 2px;
+  margin: 1rem 0 2rem;
+}
+
+/* ============================================================
+   GRID UTILITIES
+   ============================================================ */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  section { padding: 3.5rem 0; }
+}
