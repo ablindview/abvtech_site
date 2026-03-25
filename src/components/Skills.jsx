@@ -33,8 +33,7 @@ export default function Skills() {
   return (
     <section id="skills" aria-labelledby="skills-heading">
       <div className="container">
-        <span className="section-label" aria-hidden="true">Capabilities</span>
-        <h2 id="skills-heading" className="section-title">Skills &amp; Expertise</h2>
+        <h2 id="skills-heading" className="section-title">Skills</h2>
         <div className="divider" aria-hidden="true" />
 
         <div className="skills-grid">

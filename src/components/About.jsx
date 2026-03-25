@@ -20,8 +20,7 @@ export default function About() {
   return (
     <section id="about" aria-labelledby="about-heading">
       <div className="container">
-        <span className="section-label" aria-hidden="true">About Me</span>
-        <h2 id="about-heading" className="section-title">Driven by Accessibility &amp; Technology</h2>
+        <h2 id="about-heading" className="section-title">About Me</h2>
         <div className="divider" aria-hidden="true" />
 
         <div className="about-grid">

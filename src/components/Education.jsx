@@ -32,8 +32,7 @@ export default function Education() {
   return (
     <section id="education" aria-labelledby="education-heading">
       <div className="container">
-        <span className="section-label" aria-hidden="true">Learning</span>
-        <h2 id="education-heading" className="section-title">Education &amp; Certifications</h2>
+        <h2 id="education-heading" className="section-title">Education</h2>
         <div className="divider" aria-hidden="true" />
 
         <div className="education-grid">

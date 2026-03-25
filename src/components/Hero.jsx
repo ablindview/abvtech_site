@@ -6,9 +6,8 @@ export default function Hero() {
       <div className="hero-grid-bg" aria-hidden="true" />
       <div className="container hero-content">
         <div className="hero-text">
-          <p className="hero-eyebrow">Hello, I'm</p>
           <h1 className="hero-name">
-            <span className="gradient-text">Dwayne Davis</span>
+            Hello, I'm <span className="gradient-text">Dwayne Davis</span>
           </h1>
           <p className="hero-title">QA &amp; Accessibility Specialist</p>
           <p className="hero-tagline">

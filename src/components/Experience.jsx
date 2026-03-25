@@ -66,8 +66,7 @@ export default function Experience() {
   return (
     <section id="experience" aria-labelledby="experience-heading">
       <div className="container">
-        <span className="section-label" aria-hidden="true">Career</span>
-        <h2 id="experience-heading" className="section-title">Work Experience</h2>
+        <h2 id="experience-heading" className="section-title">Experience</h2>
         <div className="divider" aria-hidden="true" />
 
         <ol className="timeline" aria-label="Work history in reverse chronological order">

@@ -5,8 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" aria-labelledby="contact-heading">
       <div className="container">
-        <span className="section-label" aria-hidden="true">Reach Out</span>
-        <h2 id="contact-heading" className="section-title">Get in Touch</h2>
+        <h2 id="contact-heading" className="section-title">Contact</h2>
         <div className="divider" aria-hidden="true" />
         <p className="section-subtitle">
           Open to QA and accessibility roles. Feel free to reach out directly.
