@@ -76,7 +76,7 @@ export default function Experience() {
               <div className="card timeline-card">
                 <div className="timeline-header">
                   <div>
-                    <h3 className="timeline-role">{job.role}</h3>
+                    <p className="timeline-role">{job.role}</p>
                     <p className="timeline-company">{job.company}</p>
                   </div>
                   <time className="timeline-dates">{job.dates}</time>

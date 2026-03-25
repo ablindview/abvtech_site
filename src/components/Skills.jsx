@@ -3,6 +3,11 @@ import BackToTop from './BackToTop'
 
 const SKILL_GROUPS = [
   {
+    category: 'Specialties',
+    icon: '◈',
+    skills: ['Python Programming', 'Client Communication', 'Service Delivery', 'Technical Writing', 'Documentation Support', 'Troubleshooting', 'WAN Configuration', 'Microsoft Office Suite', 'VoiceOver (iOS/macOS)', 'JAWS for Windows', 'ZenDesk', 'WCAG Compliance'],
+  },
+  {
     category: 'Accessibility & Assistive Tech',
     icon: '♿',
     skills: ['VoiceOver (iOS)', 'VoiceOver (macOS)', 'JAWS for Windows', 'WCAG 2.1 AA', 'Braille Display Support', 'Accessibility Assessments', 'Inclusive Design'],
@@ -41,7 +46,7 @@ export default function Skills() {
             <div key={group.category} className="card skill-card">
               <div className="skill-category-header">
                 <span className="skill-icon" aria-hidden="true">{group.icon}</span>
-                <h3 className="skill-category">{group.category}</h3>
+                <p className="skill-category">{group.category}</p>
               </div>
               <ul className="skill-list" aria-label={`${group.category} skills`}>
                 {group.skills.map(skill => (

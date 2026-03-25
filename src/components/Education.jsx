@@ -41,7 +41,7 @@ export default function Education() {
               <div className="education-type-badge">
                 <span className="badge">{item.type}</span>
               </div>
-              <h3 className="education-credential">{item.credential}</h3>
+              <p className="education-credential">{item.credential}</p>
               <p className="education-institution">{item.institution}</p>
               <p className="education-detail">{item.detail}</p>
             </article>

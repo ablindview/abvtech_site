@@ -16,7 +16,7 @@ export default function Portfolio() {
               <path d="M3 9h18M9 21V9" />
             </svg>
           </div>
-          <h3 className="portfolio-cs-title">Projects Coming Soon</h3>
+          <p className="portfolio-cs-title">Projects Coming Soon</p>
           <p className="portfolio-cs-text">
             I'm currently documenting and preparing projects for showcase here.
             Check back soon, or follow my{' '}
