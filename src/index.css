@@ -66,6 +66,19 @@
 }
 
 /* ============================================================
+   SMOOTH SCROLL — disabled for reduced motion (WCAG 2.3.3)
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ============================================================
    RESET & BASE
    ============================================================ */
 *, *::before, *::after {

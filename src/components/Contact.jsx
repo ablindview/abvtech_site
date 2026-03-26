@@ -12,7 +12,7 @@ export default function Contact() {
         </p>
 
         <div className="contact-grid">
-          <a href="mailto:ablindview@gmail.com" className="card contact-card" aria-label="Send email to ablindview@gmail.com">
+          <a href="mailto:dwayne@abvtech.net" className="card contact-card" aria-label="Send email to dwayne@abvtech.net">
             <span className="contact-icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -21,7 +21,7 @@ export default function Contact() {
             </span>
             <div>
               <p className="contact-label">Email</p>
-              <p className="contact-value">ablindview@gmail.com</p>
+              <p className="contact-value">dwayne@abvtech.net</p>
             </div>
           </a>
 
