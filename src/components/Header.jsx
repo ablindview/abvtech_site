@@ -26,7 +26,9 @@ export default function Header() {
     <header className={`site-header${scrolled ? ' scrolled' : ''}`} role="banner">
       <div className="container header-inner">
         <a href="#hero" className="header-logo" aria-label="Dwayne Davis — home">
-          <img src="/logo.png" alt="A Blind View Tech logo" width="40" height="40" />
+          <div className="header-logo-img-wrap" aria-hidden="true">
+            <img src="/logo.png" alt="" />
+          </div>
           <span className="header-logo-text">Dwayne Davis</span>
         </a>
 

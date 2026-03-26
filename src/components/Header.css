@@ -38,8 +38,22 @@
   flex-shrink: 0;
 }
 
-.header-logo img {
+.header-logo-img-wrap {
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
   border-radius: 6px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.header-logo-img-wrap img {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header-logo-text {
