@@ -85,18 +85,10 @@
   height: 100%;
 }
 
-.hero-logo-crop {
+.hero-logo-wrap img {
   width: 220px;
   height: 220px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.hero-logo-crop img {
-  display: block;
-  width: 380px;
-  height: auto;
-  margin-left: -80px;
+  object-fit: contain;
   filter: drop-shadow(0 0 24px rgba(167, 139, 250, 0.5)) brightness(1.4) saturate(2);
 }
 
@@ -127,7 +119,7 @@
 @media (prefers-color-scheme: light) {
   .hero-orb-1 { background: rgba(124, 58, 237, 0.12); }
   .hero-orb-2 { background: rgba(29, 78, 216, 0.1); }
-  .hero-logo-crop img { filter: brightness(1.1) saturate(1.5); }
+  .hero-logo-wrap img { filter: brightness(1.1) saturate(1.5); }
 }
 
 @media (max-width: 768px) {
@@ -151,6 +143,5 @@
     margin: 0 auto;
   }
 
-  .hero-logo-crop { width: 160px; height: 160px; }
-  .hero-logo-crop img { width: 280px; margin-left: -60px; }
+  .hero-logo-wrap img { width: 160px; height: 160px; }
 }
