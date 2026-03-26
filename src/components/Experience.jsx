@@ -4,22 +4,22 @@ import BackToTop from './BackToTop'
 const JOBS = [
   {
     company: 'Apple, Inc.',
-    role: 'Product Insights Seed Analyst',
-    dates: 'April 2024 — Present',
-    bullets: [
-      'Support stakeholders by providing usable cases across iPhone, Mac, and other Apple products.',
-      'Assist customers and Tier 1 Advisers in finding solutions and escalating to engineering.',
-      'Gather and analyze data to inform product decision-making and software releases.',
-    ],
-  },
-  {
-    company: 'Apple, Inc.',
     role: 'Tier 1 to Carpe Facto Advisor',
     dates: 'August 2019 — Present',
     bullets: [
       'Support products from iPhones to Macs, addressing 50+ technical incidents daily.',
       'Assist customers and Tier 1 Advisers in finding solutions and escalating to engineering.',
       'Work with beta feedback cycles to identify and report issues for upcoming software releases.',
+    ],
+  },
+  {
+    company: 'Apple, Inc.',
+    role: 'Product Insights Seed Analyst',
+    dates: 'April 2024 — October 2024',
+    bullets: [
+      'Support stakeholders by providing usable cases across iPhone, Mac, and other Apple products.',
+      'Assist customers and Tier 1 Advisers in finding solutions and escalating to engineering.',
+      'Gather and analyze data to inform product decision-making and software releases.',
     ],
   },
   {
