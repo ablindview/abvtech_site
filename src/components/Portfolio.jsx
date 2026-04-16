@@ -3,12 +3,30 @@ import BackToTop from './BackToTop'
 
 const PROJECTS = [
   {
-    id: 'iaap-quiz',
+    id: 'cpacc-study-guide',
+    title: 'CPACC Study Guide',
+    description: 'Comprehensive review of all three CPACC domains: Disabilities, Accessibility Standards, and Accessibility Management.',
+    url: 'https://iaap.abvtech.net/CPACC_Study_Guide.html',
+    urlLabel: 'Open Study Guide',
+    tags: ['Accessibility', 'IAAP', 'HTML', 'CSS'],
+    isLive: true,
+  },
+  {
+    id: 'cpacc-practice-quiz',
     title: 'CPACC Practice Quiz',
-    description: 'An interactive exam-prep tool for the IAAP Certified Professional in Accessibility Core Competencies (CPACC) exam, covering all three domains with timed quiz mode and instant feedback.',
-    url: 'https://iaap.abvtech.net',
-    urlLabel: 'Open live site',
-    tags: ['Accessibility', 'HTML', 'CSS', 'JavaScript'],
+    description: 'Test your knowledge with practice questions covering WCAG, disability models, assistive technology, and more.',
+    url: 'https://iaap.abvtech.net/CPACC_Practice_Quiz.html',
+    urlLabel: 'Start Quiz',
+    tags: ['Accessibility', 'IAAP', 'HTML', 'JavaScript'],
+    isLive: true,
+  },
+  {
+    id: 'cpacc-flashcards',
+    title: 'CPACC Flashcards',
+    description: '100 advanced flashcards organized by domain. Pick a stack, flip each card, and drill the terms you need to know.',
+    url: 'https://iaap.abvtech.net/CPACC_Flashcards.html',
+    urlLabel: 'Study Flashcards',
+    tags: ['Accessibility', 'IAAP', 'HTML', 'JavaScript'],
     isLive: true,
   },
   {
