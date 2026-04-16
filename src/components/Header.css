@@ -130,9 +130,10 @@
     background: var(--bg-surface);
     display: none;
     z-index: 99;
+    overflow-y: auto;
   }
 
-  nav:has(.nav-list.open) {
+  nav.nav-open {
     display: block;
   }
 

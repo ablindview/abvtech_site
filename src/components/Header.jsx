@@ -32,7 +32,7 @@ export default function Header() {
           <span className="header-logo-text">Dwayne Davis</span>
         </a>
 
-        <nav aria-label="Main navigation">
+        <nav className={menuOpen ? 'nav-open' : ''} aria-label="Main navigation">
           <ul className={`nav-list${menuOpen ? ' open' : ''}`} role="list">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
