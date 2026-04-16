@@ -1,34 +1,62 @@
-.portfolio-coming-soon {
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 2rem;
-  background: var(--bg-card);
-  border: 2px dashed var(--border-strong);
-  border-radius: var(--radius);
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 1.5rem;
 }
 
-.portfolio-icon {
-  color: var(--accent-purple);
-  margin-bottom: 1.25rem;
-  opacity: 0.7;
+.portfolio-card-body {
+  flex: 1;
 }
 
-.portfolio-cs-title {
-  font-size: 1.4rem;
+.portfolio-card-title {
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
-.portfolio-cs-text {
+.portfolio-card-desc {
+  font-size: 0.93rem;
   color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.7;
-  max-width: 40ch;
-  margin: 0;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+
+.portfolio-card-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-purple);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.portfolio-link:hover {
+  opacity: 0.75;
+}
+
+.portfolio-link--live {
+  color: var(--accent-green, #34d399);
 }
