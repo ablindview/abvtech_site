@@ -14,6 +14,17 @@ const JOBS = [
   },
   {
     company: 'Apple, Inc.',
+    role: 'Learning Coach Specialist',
+    dates: 'February 2022 — July 2022',
+    bullets: [
+      'Facilitated training sessions, office hours, and program kickoffs to support learning outcomes across teams.',
+      'Managed and resolved incoming support tickets, ensuring timely and accurate responses.',
+      'Audited course materials and documentation, identifying and escalating accessibility gaps for remediation.',
+      'Delivered a live VoiceOver demonstration for Global Accessibility Awareness Day, highlighting inclusive design practices.',
+    ],
+  },
+  {
+    company: 'Apple, Inc.',
     role: 'Product Insights Seed Analyst',
     dates: 'April 2024 — October 2024',
     bullets: [
