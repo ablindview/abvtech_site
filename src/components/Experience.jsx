@@ -14,6 +14,16 @@ const JOBS = [
   },
   {
     company: 'Apple, Inc.',
+    role: 'Product Insights Seed Analyst',
+    dates: 'April 2024 — October 2024',
+    bullets: [
+      'Support stakeholders by providing usable cases across iPhone, Mac, and other Apple products.',
+      'Assist customers and Tier 1 Advisers in finding solutions and escalating to engineering.',
+      'Gather and analyze data to inform product decision-making and software releases.',
+    ],
+  },
+  {
+    company: 'Apple, Inc.',
     role: 'Learning Coach Specialist',
     dates: 'February 2022 — July 2022',
     bullets: [
@@ -21,16 +31,6 @@ const JOBS = [
       'Managed and resolved incoming support tickets, ensuring timely and accurate responses.',
       'Audited course materials and documentation, identifying and escalating accessibility gaps for remediation.',
       'Delivered a live VoiceOver demonstration for Global Accessibility Awareness Day, highlighting inclusive design practices.',
-    ],
-  },
-  {
-    company: 'Apple, Inc.',
-    role: 'Product Insights Seed Analyst',
-    dates: 'April 2024 — October 2024',
-    bullets: [
-      'Support stakeholders by providing usable cases across iPhone, Mac, and other Apple products.',
-      'Assist customers and Tier 1 Advisers in finding solutions and escalating to engineering.',
-      'Gather and analyze data to inform product decision-making and software releases.',
     ],
   },
   {
