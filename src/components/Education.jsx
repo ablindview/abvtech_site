@@ -23,8 +23,8 @@ const EDUCATION = [
   {
     institution: 'National University (California)',
     credential: 'BS in Information Technology',
-    detail: '25 units completed toward a Bachelor of Science in Information Technology.',
-    type: 'In Progress',
+    detail: 'Completed senior-year coursework toward a Bachelor of Science in Information Technology. Degree not completed.',
+    type: 'Not Completed',
   },
 ]
 
