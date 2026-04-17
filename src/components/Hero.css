@@ -90,6 +90,8 @@
   height: 220px;
   object-fit: contain;
   filter: none;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .hero-orb {
@@ -143,5 +145,5 @@
     margin: 0 auto;
   }
 
-  .hero-logo-wrap img { width: 160px; height: 160px; }
+  .hero-logo-wrap img { width: 160px; height: 160px; transform: translateZ(0); -webkit-transform: translateZ(0); }
 }
