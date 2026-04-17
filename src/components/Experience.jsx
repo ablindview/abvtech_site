@@ -34,6 +34,16 @@ const JOBS = [
     ],
   },
   {
+    company: 'Fable',
+    role: 'Accessibility Tester',
+    dates: 'August 2023 — Present',
+    bullets: [
+      'Evaluate websites and apps for accessibility across desktop and mobile platforms, both self-guided and in collaboration with company representatives.',
+      'Conduct qualitative analysis of user interactions to identify underlying accessibility issues and root causes affecting the user experience.',
+      'Provide actionable feedback to company representatives on product quality, accessibility standards, and areas for improvement.',
+    ],
+  },
+  {
     company: 'IFB Solutions / Health Net',
     role: 'Logistics Coordinator',
     dates: 'November 2016 — August 2019',
