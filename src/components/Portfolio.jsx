@@ -53,7 +53,6 @@ export default function Portfolio() {
   return (
     <section id="portfolio" aria-labelledby="portfolio-heading">
       <div className="container">
-        <span className="section-label" aria-hidden="true">Work</span>
         <h2 id="portfolio-heading" className="section-title">Portfolio</h2>
         <div className="divider" aria-hidden="true" />
 
