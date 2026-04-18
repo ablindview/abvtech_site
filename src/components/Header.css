@@ -39,18 +39,15 @@
 }
 
 .header-logo-img-wrap {
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border-radius: 6px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
 }
 
 .header-logo-img-wrap img {
   display: block;
-  width: 72px;
-  height: auto;
-  margin-left: -16px;
+  width: 36px;
+  height: 36px;
   filter: none;
 }
 
