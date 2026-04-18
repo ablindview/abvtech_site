@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="hero-orb hero-orb-1" />
           <div className="hero-orb hero-orb-2" />
           <div className="hero-logo-wrap">
-            <img src="/logo-cropped.png" alt="" width="220" height="265" />
+            <img src="/a_blind_view_tech_logo.svg" alt="" width="220" height="220" />
           </div>
         </div>
       </div>
