@@ -27,7 +27,7 @@ export default function Header() {
       <div className="container header-inner">
         <a href="#hero" className="header-logo" aria-label="Dwayne Davis — home">
           <div className="header-logo-img-wrap" aria-hidden="true">
-            <img src="/a_blind_view_tech_logo.svg" alt="" />
+            <img src="/a_blind_view_tech_icon.svg" alt="" />
           </div>
           <span className="header-logo-text">Dwayne Davis</span>
         </a>
