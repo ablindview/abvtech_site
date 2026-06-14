@@ -45,11 +45,11 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="hero-visual" aria-hidden="true">
-          <div className="hero-orb hero-orb-1" />
-          <div className="hero-orb hero-orb-2" />
-          <div className="hero-logo-wrap">
-            <img src="/a_blind_view_tech_logo.svg" alt="" width="220" height="220" />
+        <div className="hero-visual">
+          <div className="hero-orb hero-orb-1" aria-hidden="true" />
+          <div className="hero-orb hero-orb-2" aria-hidden="true" />
+          <div className="hero-profile-wrap">
+            <img src="/profile.png" alt="Dwayne Davis" width="220" height="220" />
           </div>
         </div>
       </div>
